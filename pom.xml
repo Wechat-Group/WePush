@@ -459,7 +459,7 @@
             <plugin>
                 <groupId>io.github.fvarrui</groupId>
                 <artifactId>javapackager</artifactId>
-                <version>1.7.4</version>
+                <version>1.7.5</version>
                 <configuration>
                     <bundleJre>true</bundleJre>
                     <mainClass>com.fangxuele.tool.push.App</mainClass>
@@ -517,6 +517,9 @@
                                                                                     <configuration>
                                                                                         <platform>mac</platform>
                                                                                         <createTarball>true</createTarball>
+                                                                                        <macConfig>
+                                                                                            <macStartup>UNIVERSAL</macStartup>
+                                                                                        </macConfig>
                                                                                         <additionalModules>jdk.crypto.ec,jdk.charsets</additionalModules>
                                                                                         <customizedJre>false</customizedJre>
                                                                                     </configuration>
