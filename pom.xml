@@ -12,6 +12,25 @@
     <name>WePush</name>
     <url>https://github.com/rememberber/WePush</url>
 
+    <repositories>
+        <repository>
+            <id>alimaven</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>mvnrepository.com</id>
+            <url>https://mvnrepository.com</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>oss.sonatype.org</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -38,7 +57,7 @@
         <velocity-engine-core.version>2.3</velocity-engine-core.version>
         <lombok.version>1.18.30</lombok.version>
         <mybatis.version>3.5.13</mybatis.version>
-        <sqlite-jdbc.version>3.42.0.1</sqlite-jdbc.version>
+        <sqlite-jdbc.version>3.47.0.0</sqlite-jdbc.version>
         <junit.version>4.13.1</junit.version>
         <httpasyncclient.version>4.1.4</httpasyncclient.version>
         <HikariCP.version>3.4.5</HikariCP.version>
@@ -47,9 +66,9 @@
         <aliyun-java-sdk-dysmsapi.version>1.1.0</aliyun-java-sdk-dysmsapi.version>
         <bce-java-sdk.version>0.10.134</bce-java-sdk.version>
         <qiniu-java-sdk.version>7.3.0</qiniu-java-sdk.version>
-        <flatlaf.version>3.3</flatlaf.version>
-        <flatlaf-extras.version>3.3</flatlaf-extras.version>
-        <flatlaf-intellij-themes.version>3.3</flatlaf-intellij-themes.version>
+        <flatlaf.version>3.5.2</flatlaf.version>
+        <flatlaf-extras.version>3.5.2</flatlaf-extras.version>
+        <flatlaf-intellij-themes.version>3.5.2</flatlaf-intellij-themes.version>
         <json-path.version>2.6.0</json-path.version>
         <tencentcloud-sdk-java.version>3.1.847</tencentcloud-sdk-java.version>
     </properties>
@@ -440,7 +459,7 @@
             <plugin>
                 <groupId>io.github.fvarrui</groupId>
                 <artifactId>javapackager</artifactId>
-                <version>1.7.4</version>
+                <version>1.7.5</version>
                 <configuration>
                     <bundleJre>true</bundleJre>
                     <mainClass>com.fangxuele.tool.push.App</mainClass>
@@ -498,6 +517,9 @@
                                                                                     <configuration>
                                                                                         <platform>mac</platform>
                                                                                         <createTarball>true</createTarball>
+                                                                                        <macConfig>
+                                                                                            <macStartup>UNIVERSAL</macStartup>
+                                                                                        </macConfig>
                                                                                         <additionalModules>jdk.crypto.ec,jdk.charsets</additionalModules>
                                                                                         <customizedJre>false</customizedJre>
                                                                                     </configuration>
