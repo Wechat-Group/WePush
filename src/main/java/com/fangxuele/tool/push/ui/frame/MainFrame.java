@@ -58,6 +58,7 @@ public class MainFrame extends JFrame {
      * 添加事件监听
      */
     public void addListeners() {
+        ThreadUtil.execute(AboutListener::addListeners);
         ThreadUtil.execute(MessageTypeListener::addListeners);
         ThreadUtil.execute(HelpListener::addListeners);
         ThreadUtil.execute(AccountManageListener::addListeners);
