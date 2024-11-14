@@ -1,14 +1,21 @@
 package com.fangxuele.tool.push.ui.form;
 
 import com.fangxuele.tool.push.App;
+import com.fangxuele.tool.push.ui.UiConsts;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
 import javax.swing.text.StyleContext;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URL;
 import java.util.Locale;
 
 /**
@@ -20,6 +27,7 @@ import java.util.Locale;
  * @since 2019/5/6.
  */
 @Getter
+@Slf4j
 public class AboutForm {
     private JPanel aboutPanel;
     private JLabel sloganLabel;
@@ -45,6 +53,26 @@ public class AboutForm {
     public static void init() {
         getInstance().getPushTotalLabel().setText("<html>已累计为您推送 <b>" + App.config.getPushTotal() + "</b> 条消息</html>");
         aboutForm.getAboutPanel().updateUI();
+        // 设置版本
+        aboutForm.getVersionLabel().setText(UiConsts.APP_VERSION);
+
+        // 初始化二维码
+        aboutForm.initQrCode();
+    }
+
+    /**
+     * 初始化二维码
+     */
+    private void initQrCode() {
+        try {
+            URL url = new URL(UiConsts.QR_CODE_URL);
+            BufferedImage image = ImageIO.read(url);
+            qrCodeLabel.setIcon(new ImageIcon(image));
+        } catch (IOException e) {
+            e.printStackTrace();
+            log.error(ExceptionUtils.getStackTrace(e));
+        }
+
     }
 
     {
