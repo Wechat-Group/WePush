@@ -518,6 +518,7 @@
                                                                                         <platform>mac</platform>
                                                                                         <createTarball>true</createTarball>
                                                                                         <macConfig>
+                                                                                            <developerId>rememberber@163.com</developerId>
                                                                                             <macStartup>UNIVERSAL</macStartup>
                                                                                         </macConfig>
                                                                                         <additionalModules>jdk.crypto.ec,jdk.charsets</additionalModules>
