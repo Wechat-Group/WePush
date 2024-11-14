@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TMsg implements Serializable {
+public class TMsg {
     private Integer id;
 
     private Integer msgType;
@@ -20,8 +18,6 @@ public class TMsg implements Serializable {
     private String createTime;
 
     private String modifiedTime;
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

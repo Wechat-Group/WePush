@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TPeopleData implements Serializable {
+public class TPeopleData {
     private Integer id;
 
     private Integer peopleId;
@@ -20,8 +18,6 @@ public class TPeopleData implements Serializable {
     private String createTime;
 
     private String modifiedTime;
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

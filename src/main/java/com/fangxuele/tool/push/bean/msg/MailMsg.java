@@ -5,7 +5,6 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.io.File;
-import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -19,9 +18,7 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class MailMsg implements Serializable {
-
-    private static final long serialVersionUID = 7269816872586216264L;
+public class MailMsg {
 
     /**
      * 标题

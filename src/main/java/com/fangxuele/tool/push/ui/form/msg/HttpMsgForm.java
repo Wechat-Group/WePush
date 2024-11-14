@@ -25,7 +25,6 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
 import java.awt.*;
 import java.awt.event.ItemEvent;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -504,8 +503,7 @@ public class HttpMsgForm implements IMsgForm {
 
     @Getter
     @Setter
-    public static class NameValueObject implements Serializable {
-        private static final long serialVersionUID = -3828939498243146605L;
+    public static class NameValueObject {
 
         private String name;
 
@@ -514,9 +512,7 @@ public class HttpMsgForm implements IMsgForm {
 
     @Getter
     @Setter
-    public static class CookieObject implements Serializable {
-
-        private static final long serialVersionUID = 810193087944524307L;
+    public static class CookieObject {
 
         private String name;
 

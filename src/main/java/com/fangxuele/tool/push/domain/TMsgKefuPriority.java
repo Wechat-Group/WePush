@@ -2,10 +2,9 @@ package com.fangxuele.tool.push.domain;
 
 import com.fangxuele.tool.push.bean.TemplateData;
 
-import java.io.Serializable;
 import java.util.List;
 
-public class TMsgKefuPriority implements Serializable {
+public class TMsgKefuPriority {
     private String templateId;
 
     private String url;
@@ -33,8 +32,6 @@ public class TMsgKefuPriority implements Serializable {
     private String thumbMediaId;
 
     private List<TemplateData> templateDataList;
-
-    private static final long serialVersionUID = 1L;
 
     public String getTemplateId() {
         return templateId;

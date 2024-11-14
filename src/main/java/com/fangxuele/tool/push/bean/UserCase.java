@@ -2,8 +2,6 @@ package com.fangxuele.tool.push.bean;
 
 import lombok.Data;
 
-import java.io.Serializable;
-
 /**
  * <pre>
  * 用户案例
@@ -13,9 +11,7 @@ import java.io.Serializable;
  * @since 2019/4/20.
  */
 @Data
-public class UserCase implements Serializable {
-
-    private static final long serialVersionUID = 2829237163275443844L;
+public class UserCase {
 
     private String qrCodeUrl;
 
