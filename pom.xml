@@ -6,7 +6,7 @@
 
     <groupId>com.fangxuele.tool</groupId>
     <artifactId>WePush</artifactId>
-    <version>5.0.4</version>
+    <version>5.0.5</version>
     <packaging>jar</packaging>
 
     <name>WePush</name>
@@ -508,23 +508,23 @@
 <!--                    <additionalModules>jdk.crypto.ec,jdk.charsets</additionalModules>-->
 <!--                                            </configuration>-->
 <!--                                        </execution>-->
-                                                                                <execution>
-                                                                                    <id>bundling-for-mac</id>
-                                                                                    <phase>package</phase>
-                                                                                    <goals>
-                                                                                        <goal>package</goal>
-                                                                                    </goals>
-                                                                                    <configuration>
-                                                                                        <platform>mac</platform>
-                                                                                        <createTarball>true</createTarball>
-                                                                                        <macConfig>
-                                                                                            <developerId>rememberber@163.com</developerId>
-                                                                                            <macStartup>UNIVERSAL</macStartup>
-                                                                                        </macConfig>
-                                                                                        <additionalModules>jdk.crypto.ec,jdk.charsets</additionalModules>
-                                                                                        <customizedJre>false</customizedJre>
-                                                                                    </configuration>
-                                                                                </execution>
+                    <execution>
+                        <id>bundling-for-mac</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>package</goal>
+                        </goals>
+                        <configuration>
+                            <platform>mac</platform>
+                            <createTarball>true</createTarball>
+                            <macConfig>
+                                <developerId>rememberber@163.com</developerId>
+                                <macStartup>UNIVERSAL</macStartup>
+                            </macConfig>
+                            <additionalModules>jdk.crypto.ec,jdk.charsets</additionalModules>
+                            <customizedJre>false</customizedJre>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
 
