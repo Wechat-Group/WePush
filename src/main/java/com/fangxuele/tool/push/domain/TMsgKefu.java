@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TMsgKefu implements Serializable {
+public class TMsgKefu {
 
     private String kefuMsgType;
 
@@ -27,8 +25,6 @@ public class TMsgKefu implements Serializable {
     private String pagePath;
 
     private String thumbMediaId;
-
-    private static final long serialVersionUID = 1L;
 
     public String getKefuMsgType() {
         return kefuMsgType;

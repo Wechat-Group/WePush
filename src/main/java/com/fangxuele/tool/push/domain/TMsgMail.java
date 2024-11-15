@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TMsgMail implements Serializable {
+public class TMsgMail {
 
     private String title;
 
@@ -11,8 +9,6 @@ public class TMsgMail implements Serializable {
     private String files;
 
     private String content;
-
-    private static final long serialVersionUID = 1L;
 
     public String getTitle() {
         return title;

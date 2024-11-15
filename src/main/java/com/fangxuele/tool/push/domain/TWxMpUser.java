@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TWxMpUser implements Serializable {
+public class TWxMpUser {
     private String openId;
 
     private String nickname;
@@ -38,8 +36,6 @@ public class TWxMpUser implements Serializable {
     private String createTime;
 
     private String modifiedTime;
-
-    private static final long serialVersionUID = 1L;
 
     public String getOpenId() {
         return openId;

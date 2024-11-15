@@ -3,8 +3,6 @@ package com.fangxuele.tool.push.bean;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.io.Serializable;
-
 /**
  * <pre>
  * 模板数据
@@ -15,7 +13,7 @@ import java.io.Serializable;
  */
 @Getter
 @Setter
-public class TemplateData implements Serializable {
+public class TemplateData {
 
     private String name;
 

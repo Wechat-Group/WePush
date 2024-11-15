@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TAccount implements Serializable {
+public class TAccount {
     private Integer id;
 
     private Integer msgType;
@@ -16,8 +14,6 @@ public class TAccount implements Serializable {
     private String createTime;
 
     private String modifiedTime;
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

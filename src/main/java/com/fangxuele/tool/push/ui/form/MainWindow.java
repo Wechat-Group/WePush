@@ -36,6 +36,7 @@ public class MainWindow {
     private JPanel peopleManagePanel;
     private JPanel peopleEditPanel;
     private JPanel taskPanel;
+    private JPanel aboutPanel;
 
     private static MainWindow mainWindow;
 
@@ -60,6 +61,7 @@ public class MainWindow {
             gridLayoutManager.setMargin(new Insets(25, 0, 0, 0));
         }
 
+        mainWindow.getAboutPanel().add(AboutForm.getInstance().getAboutPanel(), GRID_CONSTRAINTS);
         mainWindow.getAccountPanel().setDividerLocation((int) (App.mainFrame.getWidth() / 5));
         mainWindow.getMessagePanel().setDividerLocation((int) (App.mainFrame.getWidth() / 5));
         mainWindow.getPeoplePanel().setDividerLocation((int) (App.mainFrame.getWidth() / 5));
@@ -98,6 +100,9 @@ public class MainWindow {
         if (tabbedPaneFont != null) tabbedPane.setFont(tabbedPaneFont);
         tabbedPane.setTabLayoutPolicy(1);
         mainPanel.add(tabbedPane, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, new Dimension(200, 200), null, 0, false));
+        aboutPanel = new JPanel();
+        aboutPanel.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
+        tabbedPane.addTab("WePush", aboutPanel);
         messageTypePanel = new JPanel();
         messageTypePanel.setLayout(new GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
         messageTypePanel.setMinimumSize(new Dimension(-1, -1));

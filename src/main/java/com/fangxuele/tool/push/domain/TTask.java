@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TTask implements Serializable {
+public class TTask {
     private Integer id;
 
     private String title;
@@ -46,8 +44,6 @@ public class TTask implements Serializable {
     private String createTime;
 
     private String modifiedTime;
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

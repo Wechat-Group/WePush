@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TMsgHttp implements Serializable {
+public class TMsgHttp {
 
     private String method;
 
@@ -17,8 +15,6 @@ public class TMsgHttp implements Serializable {
     private String body;
 
     private String bodyType;
-
-    private static final long serialVersionUID = 1L;
 
     public String getMethod() {
         return method;

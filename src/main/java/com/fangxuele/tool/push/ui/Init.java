@@ -179,6 +179,7 @@ public class Init {
      */
     public static void initAllTab() {
         MessageTypeForm.init();
+        ThreadUtil.execute(AboutForm::init);
         ThreadUtil.execute(HelpForm::init);
 //        ThreadUtil.execute(UserCaseForm::init);
         ThreadUtil.execute(AccountManageForm::init);
