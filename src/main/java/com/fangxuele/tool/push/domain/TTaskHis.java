@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TTaskHis implements Serializable {
+public class TTaskHis {
     private Integer id;
 
     private Integer taskId;
@@ -36,8 +34,6 @@ public class TTaskHis implements Serializable {
     private String createTime;
 
     private String modifiedTime;
-
-    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;

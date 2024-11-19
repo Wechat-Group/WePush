@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TMsgDing implements Serializable {
+public class TMsgDing {
 
     private String radioType;
 
@@ -21,8 +19,6 @@ public class TMsgDing implements Serializable {
     private String btnTxt;
 
     private String btnUrl;
-
-    private static final long serialVersionUID = 1L;
 
     public String getRadioType() {
         return radioType;

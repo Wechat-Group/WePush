@@ -2,10 +2,9 @@ package com.fangxuele.tool.push.domain;
 
 import com.fangxuele.tool.push.bean.TemplateData;
 
-import java.io.Serializable;
 import java.util.List;
 
-public class TMsgWxUniform implements Serializable {
+public class TMsgWxUniform {
 
     private String mpTemplateId;
 
@@ -24,9 +23,6 @@ public class TMsgWxUniform implements Serializable {
     List<TemplateData> templateDataListMp;
 
     List<TemplateData> templateDataListMa;
-
-    private static final long serialVersionUID = 1L;
-
 
     public String getMpTemplateId() {
         return mpTemplateId;

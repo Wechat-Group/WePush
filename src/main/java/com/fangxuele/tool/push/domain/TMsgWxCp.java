@@ -1,8 +1,6 @@
 package com.fangxuele.tool.push.domain;
 
-import java.io.Serializable;
-
-public class TMsgWxCp implements Serializable {
+public class TMsgWxCp {
 
     private String cpMsgType;
 
@@ -17,8 +15,6 @@ public class TMsgWxCp implements Serializable {
     private String url;
 
     private String btnTxt;
-
-    private static final long serialVersionUID = 1L;
 
     public String getCpMsgType() {
         return cpMsgType;

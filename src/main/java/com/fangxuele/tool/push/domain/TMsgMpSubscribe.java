@@ -2,10 +2,9 @@ package com.fangxuele.tool.push.domain;
 
 import com.fangxuele.tool.push.bean.TemplateData;
 
-import java.io.Serializable;
 import java.util.List;
 
-public class TMsgMpSubscribe implements Serializable {
+public class TMsgMpSubscribe {
 
     private String templateId;
 
@@ -16,8 +15,6 @@ public class TMsgMpSubscribe implements Serializable {
     private String maPagePath;
 
     List<TemplateData> templateDataList;
-
-    private static final long serialVersionUID = 1L;
 
     public String getTemplateId() {
         return templateId;
